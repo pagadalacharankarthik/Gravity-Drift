@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Drift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Coins: <span id="coins">0</span></div>
+        </div>
+
+        <div id="startScreen" class="start-screen">
+            <h2>Welcome to Gravity Drift</h2>
+            <p class="instructions">
+                🧠 Tap or Click anywhere(mouse) to flip gravity.<br>
+                🧠 Collect golden coins.<br>
+                🟩 Land on green tiles to survive.<br>
+                🧠 Avoid red moving enemies.<br>
+                <br>
+                🧠 Get as far as you can!
+            </p>
+            <button id="startButton">Start Game</button>
+        </div>
+
+        <div id="gameOver" class="hidden">
+            <h2>Game Over</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <p>Coins Collected: <span id="finalCoins">0</span></p>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
